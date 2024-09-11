@@ -1,0 +1,162 @@
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  */
+
+html, body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+ion-icon {
+    color: black;
+}
+
+.card {
+    margin: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    height: 660px;
+}
+
+.img-card {
+    max-width: 400px;
+    
+}
+
+
+
+.card:hover .save-button {
+
+    top: 10px;
+    
+}
+
+.img-card img {
+    max-width: 400px;
+    border-radius: 15pt;
+    transition: filter 1s;
+}
+
+.card:hover img {
+    filter: brightness(0.7)
+}
+
+.save-button {
+    z-index: 100;
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    background-color: #e60022;
+    padding: 15px;
+    border-radius: 20pt;
+    transition: top  0.5s;
+}
+
+
+.save-button a {
+    color: white;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.place-button {
+    padding: 15px;
+    background-color: white;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 20pt;
+    position: absolute;
+    bottom: -70px;
+    left: 10px;
+    transition: bottom  1s;
+}
+
+.place-button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.place-button:hover a {
+    color: white;
+}
+
+.place-button:hover ion-icon {
+    color: white;
+}
+
+.save-button:hover {
+    background-color: white;
+}
+
+.save-button:hover a {
+    color: #e60022;
+}
+
+.card:hover .place-button {
+    bottom: 10px;
+}
+
+
+
+.condividi {
+    position: absolute;
+    z-index: 10;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20pt;
+    right: 140px;
+    bottom: -70px;
+    transition: bottom 1.3s;
+}
+
+.condividi:hover {
+    background-color: black;
+}
+
+.condividi:hover ion-icon {
+    color: #ffffff;
+}
+
+.card:hover .condividi {
+    bottom: 10px;
+}
+
+.altro {
+    position: absolute;
+    z-index: 10;
+    padding: 15px;
+    background-color:white;
+    border-radius: 20pt;
+    right: 80px;
+    bottom: -70px;
+    transition: bottom 1.7s;
+}
+
+.altro:hover {
+    background-color: black;
+}
+
+.altro:hover ion-icon {
+    color: white;
+}
+
+.card:hover .altro {
+    bottom: 10px;
+    
+}
